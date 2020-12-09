@@ -1,4 +1,4 @@
-# rse-nd-project-3
+# rse-nd-map-my-world
 Course project "Map My World" repository for the Udacity Robotics Software Engineer Nanodegree program.
 
 This project contains the following Catkin packages :
