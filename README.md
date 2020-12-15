@@ -15,6 +15,10 @@ cd rse-nd-map-my-world
 git clone https://github.com/ros-teleop/teleop_twist_keyboard
 ```
 
+For the udacity occupancy grid exercice:
+```
+ git clone https://github.com/udacity/RoboND-OccupancyGridMappingAlgorithm
+```
 
 ## Usage
 Supposing your catkin workspace is located in `~/`, source your workspace:
