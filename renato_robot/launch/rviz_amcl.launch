@@ -1,0 +1,4 @@
+<launch>
+    <!--launch rviz-->
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d '$(find renato_robot)/amcl.rviz' "/>
+</launch>
