@@ -13,6 +13,7 @@ cd ~/catkin_ws/src
 git clone https://github.com/rodriguesrenato/rse-nd-map-my-world.git
 cd rse-nd-map-my-world
 git clone https://github.com/ros-teleop/teleop_twist_keyboard
+sudo apt-get install ros-kinetic-rtabmap-ros
 ```
 
 For the udacity occupancy grid exercice:
@@ -29,6 +30,7 @@ source devel/setup.bash
 ```
 Use the .launch files to launch packages in the following sequence:
 * Terminal 1: `roslaunch renato_robot world.launch`
+* Terminal 2: `roslaunch renato_robot mapping.launch`
 
 ## License
 The contents of this repository are covered under the MIT License.
