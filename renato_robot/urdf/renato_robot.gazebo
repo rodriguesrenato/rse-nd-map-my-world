@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot>
 
-  <gazebo reference="camera_link">
+  <gazebo reference="camera">
     <material>Gazebo/Purple</material>
   </gazebo>
 
