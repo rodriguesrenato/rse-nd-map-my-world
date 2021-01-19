@@ -5,8 +5,8 @@ This project contains the following Catkin packages :
 * renato_robot: 
     * Implementation of a differential drive robot with lidar sensor and camera, written in URDF.
     * Contains a world called `restaurant_renato.world`.
-    * RTab launch files to mapping and localization
-    * Screenshots of the results
+    * RTab launch files for mapping and localization.
+    * Screenshots of the results.
    
 ## Installation
 Clone this repository in **src** folder in your catkin workspace and following repositories bellow:
@@ -18,7 +18,7 @@ git clone https://github.com/ros-teleop/teleop_twist_keyboard
 sudo apt-get install ros-kinetic-rtabmap-ros
 ```
 
-Download my rtabmap database from [here](https://drive.google.com/file/d/1rgNc-BGYRgWc_ZZ63NjMpQOD7OWC4Kb-/view?usp=sharing) and move it to `~/.ros`
+Download my rtabmap database from [here](https://drive.google.com/file/d/1rgNc-BGYRgWc_ZZ63NjMpQOD7OWC4Kb-/view?usp=sharing) and move it to `~/.ros`.
 
 ## Usage
 Supposing your catkin workspace is located in `~/`, source your workspace:
@@ -40,12 +40,6 @@ For mapping a new rtabmap.db:
 * Use `teleop Terminal 2` to navigate through the map and do the same path 3 times.
 * Hit `CTRL+C` on `Terminal 3` and save a copy of the `rtabmap.tb` located in `~/.ros`.
 * Terminal 4: `rtabmap-databaseViewer ~/.ros/rtabmap.db` to see the results of mapping process.
-
-## Extra content
-For the udacity occupancy grid exercice, follow the instructions in repository:
-```
- git clone https://github.com/udacity/RoboND-OccupancyGridMappingAlgorithm
-```
 
 ## License
 The contents of this repository are covered under the MIT License.
