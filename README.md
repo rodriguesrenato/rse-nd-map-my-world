@@ -32,8 +32,10 @@ Use the .launch files to launch packages in the following sequence:
 * Terminal 2: `rosrun teleop_twist_keyboard teleop_twist_keyboard.py` and adjust both speeds to `0.12`.
 
 For run localization with rtabmap.db I previously made:
-* Terminal 3: `roslaunch renato_robot mapping.launch`.
+* Terminal 3: `roslaunch renato_robot localization.launch`.
 * Terminal 4: `rosrun rviz rviz` and add `Robot Model`,`map`,`laser scan` to check the results.
+
+* Obs: To generate `.yaml` and `.pgm` files, you have to have previously launched `localization.launch` and `world.launch`, then open a new terminal and run `rosrun map_server map_saver -f myMap`. The files will be generated on your current folder. The `-f` param specify you map output name.
 
 For mapping a new rtabmap.db:
 * Terminal 3: `roslaunch renato_robot mapping.launch`.
