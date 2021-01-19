@@ -32,8 +32,7 @@
     <inertial>
       <mass value="10"/>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
-      <cuboid_inertia m="10" x= "0.2" y= "0.3" z="0.14"/>
-      <inertia ixx="0.09133" ixy = "0" ixz = "0" iyy="0.04967" iyz = "0" izz="0.0685" />
+      <inertia ixx="0.09133" ixy = "0" ixz = "0" iyy="0.04967" iyz = "0" izz="0.10833" />
     </inertial>
 
     <collision name='collision'>
@@ -87,7 +86,6 @@
     <inertial>
       <mass value="3"/>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
-      <cuboid_inertia m="3" x= "0.3" y= "0.3" z="0.05"/>
       <inertia ixx="0.023125" ixy = "0" ixz = "0" iyy="0.023125" iyz = "0" izz="0.045" />
     </inertial>
 
@@ -163,9 +161,9 @@
   <link name='left_wheel'>
 
     <inertial>
-      <mass value="0.5"/>
+      <mass value="2"/>
       <origin xyz="0.0 0 0" rpy=" 0 1.5707 1.5707"/>
-      <inertia ixx="0.001904" ixy = "0" ixz = "0" iyy="0.001904" iyz = "0" izz="0.0036" />
+      <inertia ixx="0.007617" ixy = "0" ixz = "0" iyy="0.007617" iyz = "0" izz="0.0144" />
     </inertial>
 
     <collision name='collision'>
@@ -186,9 +184,9 @@
   <link name='right_wheel'>
 
     <inertial>
-      <mass value="0.5"/>
+      <mass value="2"/>
       <origin xyz="0.0 0 0" rpy=" 0 1.5707 1.5707"/>
-      <inertia ixx="0.001904" ixy = "0" ixz = "0" iyy="0.001904" iyz = "0" izz="0.0036" />
+      <inertia ixx="0.007617" ixy = "0" ixz = "0" iyy="0.007617" iyz = "0" izz="0.0144" />
     </inertial>
 
     <collision name='collision'>
@@ -212,7 +210,7 @@
     <parent link="base_chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="100" velocity="100"/>
-    <dynamics damping="0.1" friction="0.1"/>
+    <dynamics damping="0.01" friction="0.1"/>
   </joint>
 
   <joint type="continuous" name="right_wheel_hinge">
@@ -221,7 +219,7 @@
     <parent link="base_chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="100" velocity="100"/>
-    <dynamics damping="0.1" friction="0.1"/>
+    <dynamics damping="0.01" friction="0.1"/>
   </joint>
 
   <!-- ### CAMERA ### -->
@@ -248,7 +246,7 @@
   </link>
 
   <joint type="fixed" name="camera_joint">
-    <origin xyz="0.125 0 0" rpy="0 0 0"/>
+    <origin xyz="0.125 0 0.15" rpy="0 0 0"/>
     <child link="camera_link"/>
     <parent link="base_chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0.02"/>
